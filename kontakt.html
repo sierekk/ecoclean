@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EcoClean - formularz kontaktowy</title>
+</head>
+<body>
+    <header>
+        <span>Profesjonalne sprzątanie biur i mieszkań</span>
+        <h1>EcoClean</h1>
+        <a href="index.html" class="kontakt">STRONA GŁOWNA</a>
+    </header>
+    <main>
+        <form action="sierekxd@gmail.com" method="post">
+            <label for="imie">Nazwa:<input type="text" name="imie" id="imie" placeholder="Np. Tomasz"></label><br>
+            <label for="mail">Email:<input type="email" name="mail" id="mail" placeholder="Np. TomaszJ@gmail.com"></label><br>
+            <label for="telefon">Nr. telefonu:<input type="tel" name="telefon" id="telefon" placeholder="Np. 555-555-555"></label>
+            <p>Wybierz usługę:</p>
+            <input type="radio" name="usluga" value="mieszkania" id="mieszkania"><label for="mieszkania">Mieszkanie</label>
+            <input type="radio" name="usluga" value="biura" id="biura"><label for="biura">Biuro</label>
+            <input type="radio" name="usluga" value="poremont" id="poremont"><label for="poremont">Sprzątanie po remoncie</label>
+            <input type="radio" name="usluga" value="Inne" id="inne"><label for="inne">Inne</label><br>
+            <p>Dodatki:</p>
+            <select name="dodatki" id="dodatki">
+                <option value="okna">Mycie okien</option>
+                <option value="dywan">Czyszczenie dywanu</option>
+                <option value="wykładzina">Czysczenie wykładziny</option>
+            </select>
+            <p>Opis:</p>
+            <textarea name="opis" id="opis" placeholder="Czego potrzebujesz?"></textarea> <br>
+            <button type="button">Wyslij formularz!</button>
+        </form>
+    </main>
+    <footer>
+        <div class="kontaktowy">
+            <span>EcoClean - twoja firma sprzątająca</span>
+            <a href="tel:555-555-555" class="cta">Numer telefonu: 555-555-555</a>
+            <a href="mailto:ecoclean@gmail.com" class="cta">Nasz mail: ecoclean@gmail.com</a>
+        </div>
+        <a href="index.html" class="powrot">Strona głowna</a>
+        <div id="socjale">
+            <a href="https://www.instagram.com/bbo.siere_k/"><img src="ig.png" alt="Instagram" class="socjal"></a>
+            <a href="https://www.instagram.com/bbo.siere_k/"><img src="fb.png" alt="facebook" class="socjal"></a>
+            <a href="https://www.instagram.com/bbo.siere_k/"><img src="tiktok.png" alt="Tiktok" class="socjal"></a>
+        </div>
+    </footer>
+</body>
+</html>

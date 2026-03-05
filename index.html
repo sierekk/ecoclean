@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EcoClean</title>
+</head>
+<body>
+    <header>
+        <span class="head">Profesjonalne sprzątanie biur i mieszkań</span>
+        <h1>EcoClean - strona głowna</h1>
+        <a href="#_kontakt" class="kontakt">KONTAKT</a>
+    </header>
+    <div id="glowny">
+        <section class="onas">
+            <h2>EcoClean - twoja firma sprzatająca</h2>
+            <p class="opis">
+            Jesteśmy profesjonalną firmą sprzątającą działającą na terenie Bydgoszczy i okolic.
+            Od lat pomagamy naszym klientom utrzymać idealną czystość w mieszkaniach, domach oraz biurach.
+            Stawiamy na dokładność, terminowość i najwyższą jakość usług, dzięki czemu zaufało nam już wielu klientów prywatnych i firmowych.
+            Korzystamy wyłącznie z bezpiecznych i sprawdzonych środków czystości, dbając nie tylko o porządek, ale także o zdrowie naszych klientów i środowisko.
+            </p>
+        </section>
+        <section class="uslugi">
+            <h2>Nasze usługi:</h2>
+            <div class="kontener-uslugi">
+                <div class="usluga">
+                    <h3>Sprzątanie biur</h3>
+                    <p>
+                        Regularne sprzątanie biur i przestrzeni firmowych
+                    </p>
+                </div>
+                <div class="usluga">
+                    <h3>Sprzątanie mieszkań</h3>
+                    <p>Kompleksowe sprzątanie mieszkań i domów.</p>
+                </div>
+                <div class="usluga">
+                    <h3>Sprzątania po remoncie</h3>
+                    <p>Usuwanie pyłu i zabrudzeń po pracach budowlanych.</p>
+                </div>
+                <div class="usluga">
+                    <h3>Inne</h3>
+                    <p>Potrzebujesz nietypowej usługi? Wypełnij formularz kontaktowy.</p>
+                </div>
+            </div>
+        </section>
+        <div class="kontener-dlaczego">
+            <section class="dlaczego">
+                <h2>Dlaczego my?</h2>
+                    <div>
+                        <ul>
+                            <li>Ponad 5 lat doświadczenia.</li>
+                            <li>Szybka realizacja usług, nawet w 24h.</li>
+                            <li>Ekologiczne środki bezpieczne dla ludzi i zwierząt.</li>
+                            <li>Dobre stawki</li>
+                        </ul>
+                    </div>
+            </section>
+            <section class="opinie">
+                <h2>Opinie naszych klientów:</h2>
+                <div class="opinia">
+                    <h4>Anna Kowalska</h4>
+                    <p>Firma sprząta nasze biuro od roku.
+                        Zawsze punktualnie i bardzo dokładnie.</p>
+                </div>
+                <div class="opinia">
+                    <h4>Marek Nowak</h4>
+                    <p>Świetna obsługa i szybki kontakt.
+                        Polecam każdej firmie.</p>
+                </div>
+                <div class="opinia">
+                    <h4>Katarzyna Zielińska</h4>
+                    <p>Zamówiłam sprzątanie mieszkania po remoncie.
+                        Efekt był idealny.</p>
+                </div>
+            </section>
+        </div>
+        <section class="prace">
+            <h2>Nasze przykładowe prace:</h2>
+            <div class="zdjecia">
+                <button type="button" class="lewo" onclick="lewo()">&#8592;</button>
+                <img src="praca1.jpg" alt="Przykładowa praca" id="praca">
+                <button type="button" class="prawo" onclick="prawo()">&#8594;</button>
+                
+            </div>
+            
+        </section>
+        <section class="kontakt2">
+            <a href="kontakt.html" id="_kontakt" target="_blank">Zapraszamy na strone z formularzem do wypełnienia!</a>
+        </section>
+    </div>
+    <footer class="glowna">
+        <div class="kontaktowy">
+            <span class="nazwa">EcoClean - twoja firma sprzątająca</span>
+            <a href="tel:555-555-555" class="cta">Numer telefonu: 555-555-555</a>
+            <a href="mailto:ecoclean@gmail.com" class="cta">Nasz mail: ecoclean@gmail.com</a>
+        </div>
+        <div id="socjale">
+            <a href="https://www.instagram.com/bbo.siere_k/" target="_blank"><img src="ig.png" alt="Instagram" class="socjal"></a>
+            <a href="https://www.instagram.com/bbo.siere_k/" target="_blank"><img src="fb.png" alt="facebook" class="socjal"></a>
+            <a href="https://www.instagram.com/bbo.siere_k/" target="_blank"><img src="tiktok.png" alt="Tiktok" class="socjal"></a>
+        </div>
+    </footer>
+    <script>
+        let zdj=document.getElementById('praca')
+        let i=0
+        let tab=['praca1.jpg','praca2.jpg']
+        function lewo(){
+            i-=1
+             if(i<0){
+                i=1
+            }
+            zdj.src=tab[i]
+        }
+        function prawo(){
+            i+=1
+             if(i>1){
+                i=0
+            }
+            zdj.src=tab[i]
+        }
+    </script>
+</body>
+</html>
